@@ -16,6 +16,7 @@ set(CMAKE_TOOLCHAIN_FILE ${CMAKE_CURRENT_SOURCE_DIR}/vcpkg/scripts/buildsystems/
 set(VCPKG_CHAINLOAD_TOOLCHAIN_FILE $ENV{EMSDK}/upstream/emscripten/cmake/Modules/Platform/Emscripten.cmake CACHE STRING "Emscripten toolchain file")
 set(VCPKG_TARGET_TRIPLET wasm32-emscripten)
 set(VCPKG_BUILD_TYPE release)
+set(CMAKE_BUILD_TYPE release)
 if(EMSCRIPTEN)
     message(STATUS "Built with Emscripten")
 endif()

@@ -16,7 +16,8 @@
             "dependencies": [
                 {
                     "name": "freetype",
-                    "default-features": false
+                    "default-features": false,
+                    "features": ["bzip2", "png", "zlib", "error-strings"]
                 },
                 "tinyxml2",
                 "libpng"
