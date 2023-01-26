@@ -14,7 +14,10 @@
         "extensions": {
             "description": "Extended functionality that depends on external libraries - loading fonts and SVG files, generating PNG images",
             "dependencies": [
-                "freetype",
+                {
+                    "name": "freetype",
+                    "default-features": false
+                },
                 "tinyxml2",
                 "libpng"
             ]
